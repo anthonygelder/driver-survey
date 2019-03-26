@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<title>botanicaSEATTLE - Driver Survey</title>
 </head>
@@ -17,38 +18,35 @@
 
 		<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycby78t4mxjatVGb6Oo5MQgmTUdwFvEITV3o3hWCaYw/exec">
 		
-			<div class="form-elements">
+			<div class="form-group">
+				<label for="name">Name: </label>
+				<input id="name" class="form-control" name="name" placeholder="" />
+			</div>
 
-				<fieldset class="pure-group">
-					<label for="name">Name: </label>
-					<input id="name" name="name" placeholder="" />
-				</fieldset>
+			<div class="form-group">
+				<label for="store">Store: </label>
+				<input id="store" class="form-control" name="store" placeholder="" />
+			</div>
 
-				<fieldset class="pure-group">
-					<label for="store">Store: </label>
-					<input id="store" name="store" placeholder="" />
-				</fieldset>
+			<div class="form-group">
+				<label for="email"><em>Your</em> Email Address:</label>
+				<input id="email" class="form-control "name="email" type="email" value="" required placeholder=""/>
+				<span class="email-invalid" style="display:none">Must be a valid email address</span>
+			</div>
 
-				<fieldset class="pure-group">
-					<label for="email"><em>Your</em> Email Address:</label>
-					<input id="email" name="email" type="email" value="" required placeholder=""/>
-					<span class="email-invalid" style="display:none">Must be a valid email address</span>
-				</fieldset>
+			<div class="form-group">
+				<label for="driver">Delivery Driver: </label>
+				<input id="driver" class="form-control" name="driver" placeholder="" />
+			</div>
 
-				<fieldset class="pure-group">
-					<label for="driver">Delivery Driver: </label>
-					<input id="driver" name="driver" placeholder="" />
-				</fieldset>
-
-				<fieldset class="pure-group">
-					<label for="message">Message: </label>
-					<textarea id="message" name="message" rows="10" placeholder=""></textarea>
-				</fieldset>
+			<div class="form-group">
+				<label for="message">Message: </label>
+				<textarea id="message" class="form-control" name="message" rows="4" placeholder=""></textarea>
+			</div>
 
 				<button class="button-success pure-button button-xlarge">
 				<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
-			</div>
 
 
 			<div class="thankyou_message" style="display:none;">
